@@ -4,9 +4,19 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/nbo2001/learnGO/person"
 )
 
 func main() {
-	person := NewPerson("Alice", 25, 1.65)
-	fmt.Println(person.getName())
+
+	var n int
+	var name string
+
+	fmt.Scanf("%d", &n)
+
+	fmt.Scan(&name)
+
+	personIn := person.NewPerson(name, 25, 1.65)
+	fmt.Println(personIn.GetName())
 }
